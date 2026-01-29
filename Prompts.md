@@ -20,10 +20,9 @@ The purpose of this file is transparency, as required in the assignment instruct
 
 
 
- Notes
 
-- All logic is implemented manually and understood
-- No third-party frameworks used
+** All logic is implemented manually and understood
+
 
 
 

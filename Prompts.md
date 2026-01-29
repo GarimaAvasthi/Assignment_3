@@ -20,8 +20,7 @@ The purpose of this file is transparency, as required in the assignment instruct
 
 
 
-
-** All logic is implemented manually and understood
+ All logics are implemented manually and understood
 
 
 

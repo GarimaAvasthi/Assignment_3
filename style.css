@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    radial-gradient(circle at top left, #1f6feb 0%, transparent 40%),
+    radial-gradient(circle at bottom right, #238636 0%, transparent 40%),
+    linear-gradient(135deg, #0d1117, #010409);
+
+  color: #e6edf3;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 24px;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #161b22;
+  color: #e6edf3;
+}
+
+.loader {
+  width: 38px;
+  height: 38px;
+  margin: 20px auto;
+  border: 4px solid #30363d;
+  border-top: 4px solid #2ea043;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.status {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 500;
+  color: #f85149;
+}
+
+
+.profile {
+  margin-top: 20px;
+  padding: 22px;
+  border-radius: 16px;
+  background: rgba(22, 27, 34, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+
+  animation: profileEnter 0.6s ease forwards;
+}
+
+@keyframes profileEnter {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+.avatar-wrapper {
+  width: 130px;
+  margin: 0 auto 16px;
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #2ea043;
+  transform: scale(1);
+}
+
+
+.avatar.animate {
+  animation: zoomGreeting 10s ease-in-out;
+}
+
+@keyframes zoomGreeting {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(0.92);
+  }
+  70% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.profile h2,
+.profile p {
+  text-align: center;
+  margin: 6px 0;
+}
+
+
+.profile a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+
+.repos {
+  margin-top: 20px;
+}
+
+.repos h3 {
+  margin-bottom: 10px;
+}
+
+.repos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.repos li {
+  margin-bottom: 6px;
+}
+
+.repos a {
+  color: #7ee787;
+  text-decoration: none;
+}
+
+
+.hidden {
+  display: none;
+}
